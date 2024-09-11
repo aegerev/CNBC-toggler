@@ -10,32 +10,21 @@
   padding: 3rem;
 }
 
-.yellow {
-  background-color: #D9D919;
-  color: #00009C;
-}
-
-.orange {
-  background-color: orange;
+a {
   color: white;
 }
 
-.red {
-  background-color: #A62A2A;
-  color: #FFFF00;
+p {
+  font-weight: bold;
+  color: #D9D919;
 }
 
-.purple {
-  background-color: #9370DB;
-  color: #FF7F00;
+.light {
+  background-color: #007FFF;
+  color: white;
 }
 
-.blue {
-  background-color: #0000FF;
-  color: ##FFFFFF;
-}
-
-.green {
-  background-color: #32CD32;
-  color: #7FFF00;
+.dark {
+  background-color: #3232CD;
+  color: white;
 }

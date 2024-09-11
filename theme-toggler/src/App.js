@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useContext} from 'react';
+import ThemeContext from './store/theme-context.js';
+import "./App.css";
 
 function App() {
+  const themeContext = useContext(ThemeContext);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className={`App 
+    ${themeContext.isLight ? `light` : `dark`}`}>
 
-export default App;
+      <h1>CNBC</h1>
+      <p>There's only ONE place for unparalleled access. </p>
+      <p>Every day, we take you inside the World Of Business LIKE NEVER BEFORE. </p>
+      <p>Stay one step ahead. </p>
+      <p>From Opening Bell, to Power Lunch, to Mad Money. </p>
+      <p>Dive Deeper. Seize Opportunity. </p>
+      <h1>LIVE AMBITIOUSLY.</h1>
+      <button onClick={themeContext.toggleTheme}>Toggle Theme</button>
+  </div>
+  );
+ }
+
+ export default App;

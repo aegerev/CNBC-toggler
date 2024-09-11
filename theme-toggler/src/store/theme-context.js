@@ -3,38 +3,19 @@ import {createContext, useState} from 'react';
 let ThemeContext = createContext();
 
 export function ThemeProvider({children}) {
-    const [isYellow, setIsYellow] = useState(true);
-    const [isOrange, setIsOrange] = useState(true);
-    const [isRed, setIsRed] = useState(true);
-    const [isPurple, setIsPurple] = useState(true);
-    const [isBlue, setIsBlue] = useState(true);
-    const [isGreen, setIsGreen] = useState(true);
+    const [isLight, setIsLight] = useState(true);
 
     function toggleTheme() {
-        setIsYellow(!isYellow);
-        alert("changing color to Orange");
-
-        setIsOrange(!isOrange);
-        alert("changing color to Red");
-
-        setIsRed(!isRed);
-        alert("changing color to Purple");
-
-        setIsPurple(!isPurple);
-        alert("changing color to Blue");
-
-        setIsBlue(!isBlue);
-        alert("changing color to Green");
-
-        setIsGreen(!isGreen);
-        console.log("changing color to Yellow");
-
+        setIsLight(!isLight);
+        console.log("changing theme to Evening");
     }
 
     return (
-        <ThemeContext.Provider value={{ isYellow, toggleTheme }}>
+        <ThemeContext.Provider value={{ isLight, toggleTheme }}>
             {children}
         </ThemeContext.Provider>
     )
 }
+
+export default ThemeContext;
 
