@@ -20,13 +20,13 @@ export function ThemeProvider({children}) {
         setIsRed(!isRed);
         alert("changing color to Purple");
 
-        setisPurple(!isPurple);
+        setIsPurple(!isPurple);
         alert("changing color to Blue");
 
         setIsBlue(!isBlue);
         alert("changing color to Green");
 
-        setIsBlue(!isBlue);
+        setIsGreen(!isGreen);
         console.log("changing color to Yellow");
 
     }
