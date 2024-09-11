@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CNBC-toggler/static/css/main.a300a69b.css",
+    "main.js": "/CNBC-toggler/static/js/main.efb3ec3d.js",
+    "index.html": "/CNBC-toggler/index.html",
+    "main.a300a69b.css.map": "/CNBC-toggler/static/css/main.a300a69b.css.map",
+    "main.efb3ec3d.js.map": "/CNBC-toggler/static/js/main.efb3ec3d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a300a69b.css",
+    "static/js/main.efb3ec3d.js"
+  ]
+}
