@@ -11,5 +11,31 @@
 }
 
 .yellow {
-    
+  background-color: #D9D919;
+  color: #00009C;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+.red {
+  background-color: #A62A2A;
+  color: #FFFF00;
+}
+
+.purple {
+  background-color: #9370DB;
+  color: #FF7F00;
+}
+
+.blue {
+  background-color: #0000FF;
+  color: ##FFFFFF;
+}
+
+.green {
+  background-color: #32CD32;
+  color: #7FFF00;
 }
